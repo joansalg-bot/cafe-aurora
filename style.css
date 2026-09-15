@@ -1,6 +1,8 @@
-/* =========================
-   CONFIGURACIÓN GENERAL
-========================= */
+```css
+/* =========================================================
+   CAFÉ AURORA
+   Diseño Esencial
+========================================================= */
 
 * {
     margin: 0;
@@ -13,449 +15,516 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f4ee;
-    color: #30251f;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f3ea;
+    color: #3b2920;
     line-height: 1.6;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
-
-/* =========================
-   BARRA DE NAVEGACIÓN
-========================= */
+/* =========================================================
+   HEADER
+========================================================= */
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 75px;
+    z-index: 1000;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
-    padding: 0 7%;
+    padding: 18px 7%;
 
-    background-color: rgba(248, 244, 238, 0.96);
+    background: #302018;
+    color: white;
 
-    border-bottom: 1px solid #e3d9ce;
-
-    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
-    font-family: Georgia, serif;
-
-    font-size: 23px;
+    font-size: 1.5rem;
     font-weight: bold;
-
-    color: #5b3926;
 }
 
 nav {
     display: flex;
-    gap: 30px;
+    gap: 25px;
 }
 
 nav a {
-    font-size: 14px;
+    color: white;
+    text-decoration: none;
     font-weight: 600;
-
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #a06d43;
+    color: #d9a85c;
 }
 
 
-/* =========================
-   INICIO
-========================= */
+/* =========================================================
+   SECCIONES GENERALES
+========================================================= */
+
+main section {
+    padding: 80px 7%;
+}
+
+main section > p:first-child {
+    color: #a56b32;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
 
 #inicio {
-    min-height: 100vh;
+    min-height: 650px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    padding: 130px 7% 80px;
+    padding: 100px 10%;
 
     color: white;
 
     background:
         linear-gradient(
-            rgba(42, 29, 22, 0.78),
-            rgba(42, 29, 22, 0.78)
+            rgba(35, 22, 15, 0.62),
+            rgba(35, 22, 15, 0.62)
         ),
-        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=85");
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=80");
 
     background-size: cover;
     background-position: center;
 }
 
-#inicio > p:first-child {
-    font-size: 12px;
+#inicio p {
+    max-width: 650px;
+}
 
-    letter-spacing: 3px;
-
-    font-weight: bold;
-
-    margin-bottom: 20px;
+#inicio p:first-child {
+    color: #e7bd79;
 }
 
 #inicio h1 {
     max-width: 750px;
+    margin-bottom: 20px;
 
-    font-family: Georgia, serif;
-
-    font-size: clamp(50px, 7vw, 85px);
-
+    font-size: clamp(2.8rem, 6vw, 5.2rem);
     line-height: 1.05;
-
-    margin-bottom: 25px;
 }
 
-#inicio h1::first-line {
-    color: #e6c29f;
+#inicio p:not(:first-child) {
+    font-size: 1.15rem;
+    margin-bottom: 30px;
 }
 
-#inicio > p:nth-of-type(2) {
-    max-width: 550px;
-
-    font-size: 18px;
-
-    margin-bottom: 35px;
-
-    color: #f1e8df;
-}
-
-
-/* =========================
-   BOTONES
-========================= */
-
-#inicio a,
-#contacto > a {
+#inicio a {
     display: inline-block;
 
-    width: fit-content;
-
-    padding: 14px 25px;
-
-    margin-right: 10px;
+    margin: 5px 10px 5px 0;
+    padding: 13px 24px;
 
     border-radius: 30px;
 
-    background-color: #b98250;
-
+    background: #c28b4b;
     color: white;
 
+    text-decoration: none;
     font-weight: bold;
 
     transition: 0.3s;
 }
 
-#inicio a:hover,
-#contacto > a:hover {
-    transform: translateY(-3px);
-
-    background-color: #9b683f;
+#inicio a:hover {
+    background: #a86e31;
+    transform: translateY(-2px);
 }
 
 
-/* =========================
-   SECCIONES
-========================= */
-
-section {
-    padding: 100px 7%;
-}
-
-section > p:first-child {
-    color: #9b704c;
-
-    font-size: 12px;
-
-    letter-spacing: 2px;
-
-    font-weight: bold;
-
-    margin-bottom: 15px;
-}
-
-section h2 {
-    max-width: 650px;
-
-    font-family: Georgia, serif;
-
-    font-size: clamp(38px, 5vw, 58px);
-
-    line-height: 1.1;
-
-    margin-bottom: 25px;
-}
-
-
-/* =========================
+/* =========================================================
    NOSOTROS
-========================= */
+========================================================= */
 
 #nosotros {
-    min-height: 600px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    background-color: #f8f4ee;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
 }
 
-#nosotros > p:not(:first-child) {
-    max-width: 700px;
-
-    color: #6d5d52;
-
-    font-size: 16px;
-
-    margin-bottom: 18px;
+#nosotros p:not(:first-child) {
+    max-width: 750px;
+    margin: 10px auto;
 }
 
 
-/* =========================
+/* =========================================================
    MENÚ
-========================= */
+========================================================= */
 
 #menu {
-    background-color: #eee4d6;
+    background: #fffaf3;
 }
 
-#menu > p:nth-of-type(2) {
-    color: #6d5d52;
-
-    margin-bottom: 45px;
+#menu > p,
+#menu > h2 {
+    text-align: center;
 }
 
-#menu article {
-    display: inline-block;
+#menu > p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    vertical-align: top;
+#menu > h3 {
+    max-width: 1200px;
+    margin: 55px auto 25px;
 
-    width: calc(33.333% - 20px);
+    padding-bottom: 10px;
 
-    min-height: 210px;
+    font-size: 1.8rem;
 
-    margin: 10px;
+    color: #6b4228;
 
-    padding: 28px;
+    border-bottom: 2px solid #dfc39b;
+}
 
-    background-color: #fffaf4;
+
+/* =========================================================
+   GRID DE PRODUCTOS
+========================================================= */
+
+.menu-grid {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+/* =========================================================
+   TARJETA DE PRODUCTO
+========================================================= */
+
+.producto {
+    overflow: hidden;
+
+    background: white;
 
     border-radius: 18px;
 
-    border: 1px solid #e4d8ca;
+    box-shadow: 0 6px 20px rgba(70, 45, 25, 0.12);
 
-    transition: 0.3s;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-#menu article:hover {
-    transform: translateY(-6px);
+.producto:hover {
+    transform: translateY(-7px);
 
-    box-shadow: 0 15px 30px rgba(48, 37, 31, 0.08);
-}
-
-#menu article h3 {
-    font-family: Georgia, serif;
-
-    font-size: 23px;
-
-    margin-bottom: 12px;
-}
-
-#menu article p {
-    color: #75665d;
-
-    font-size: 14px;
-
-    margin-bottom: 18px;
-}
-
-#menu article strong {
-    color: #9b704c;
-
-    font-size: 17px;
+    box-shadow: 0 12px 28px rgba(70, 45, 25, 0.18);
 }
 
 
-/* =========================
+/* =========================================================
+   IMÁGENES DE PRODUCTOS
+========================================================= */
+
+.producto img {
+    display: block;
+
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+
+    background: #eee;
+}
+
+
+/* =========================================================
+   INFORMACIÓN DEL PRODUCTO
+========================================================= */
+
+.producto h3 {
+    margin: 18px 20px 8px;
+
+    font-size: 1.3rem;
+
+    color: #4b3020;
+}
+
+.producto p {
+    margin: 0 20px 15px;
+
+    color: #725f53;
+
+    font-size: 0.95rem;
+}
+
+.producto strong {
+    display: block;
+
+    margin: 0 20px 20px;
+
+    color: #a66a2c;
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================================================
    GALERÍA
-========================= */
+========================================================= */
 
 #galeria {
-    background-color: #f8f4ee;
-
     text-align: center;
 }
 
-#galeria h2 {
+#galeria > p {
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#galeria > p:nth-of-type(2) {
-    color: #6d5d52;
+.gallery-grid {
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
 }
 
 
-/* =========================
+/* =========================================================
    CONTACTO
-========================= */
+========================================================= */
 
 #contacto {
-    background-color: #30251f;
-
-    color: white;
-
     text-align: center;
+
+    background: #eadbc7;
 }
 
-#contacto h2 {
+#contacto > p {
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#contacto > p:nth-of-type(2) {
-    max-width: 600px;
-
-    margin: 0 auto 40px;
-
-    color: #d8cec5;
-}
-
-#contacto div {
+#contacto > div {
     display: inline-block;
 
     vertical-align: top;
 
-    width: 28%;
+    width: 250px;
 
-    margin: 15px;
-
-    padding: 20px;
+    margin: 25px 10px;
 }
 
-#contacto div h3 {
+#contacto h3 {
     margin-bottom: 8px;
+
+    color: #593821;
 }
 
-#contacto div p {
-    color: #cfc3ba;
+#contacto a {
+    display: inline-block;
 
-    font-size: 14px;
-}
+    margin-top: 15px;
 
-#contacto > a {
-    margin-top: 20px;
-}
+    padding: 14px 28px;
 
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    padding: 40px 7%;
-
-    background-color: #241b17;
-
+    background: #3d6b43;
     color: white;
 
+    border-radius: 30px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#contacto a:hover {
+    transform: translateY(-2px);
+
+    background: #2f5735;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 45px 7%;
+
     text-align: center;
+
+    background: #302018;
+    color: #eee;
 }
 
 footer h3 {
-    font-family: Georgia, serif;
-
-    font-size: 23px;
-
     margin-bottom: 8px;
+
+    font-size: 1.5rem;
 }
 
 footer p {
-    color: #a99d94;
-
-    font-size: 14px;
-
-    margin-top: 8px;
+    margin: 5px;
+    color: #d6cbc3;
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
+
+    header {
+        padding: 15px 5%;
+    }
 
     nav {
-        display: none;
+        gap: 15px;
     }
 
-    #menu article {
-        width: calc(50% - 20px);
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    #contacto div {
-        width: 40%;
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
 
+
+/* =========================================================
+   RESPONSIVE — CELULAR
+========================================================= */
 
 @media (max-width: 600px) {
 
     header {
-        padding: 0 5%;
+        flex-direction: column;
+
+        gap: 12px;
+
+        padding: 15px 4%;
     }
 
-    .logo {
-        font-size: 20px;
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
     }
 
     #inicio {
-        padding-left: 6%;
-        padding-right: 6%;
+        min-height: 580px;
+
+        padding: 80px 7%;
     }
 
     #inicio h1 {
-        font-size: 48px;
+        font-size: 2.8rem;
     }
 
-    section {
-        padding: 80px 6%;
+    main section {
+        padding: 60px 5%;
     }
 
-    #menu article {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .producto img {
+        height: 240px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: 260px;
+    }
+
+    #contacto > div {
         display: block;
 
         width: 100%;
 
-        margin: 15px 0;
-    }
-
-    #contacto div {
-        display: block;
-
-        width: 100%;
-
-        margin: 10px 0;
+        margin: 25px 0;
     }
 
 }
+```

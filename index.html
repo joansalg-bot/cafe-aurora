@@ -1,645 +1,594 @@
-```css
-/* =========================================================
-   CAFÉ AURORA — DISEÑO RENOVADO
-========================================================= */
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <title>Café Aurora | Más que café, una experiencia</title>
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: "Arial", sans-serif;
-    background: #f7f1e7;
-    color: #3b2920;
-    line-height: 1.6;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
 
-/* =========================================================
-   HEADER
-========================================================= */
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 18px 7%;
-
-    background: rgba(47, 31, 23, 0.97);
-    color: #fff;
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+    <header>
+        <div class="logo">
+            ☕ Café Aurora
+        </div>
 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#menu">Menú</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
-.logo {
-    font-family: Georgia, serif;
-    font-size: 1.65rem;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-}
 
-nav {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-}
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section id="inicio" class="hero">
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 600;
+        <div class="hero-content">
+            <h1>Café Aurora</h1>
 
-    transition: 0.3s ease;
-}
+            <p>
+                Más que café, una experiencia
+            </p>
 
-nav a:hover {
-    color: #d6a45d;
-}
+            <a href="#menu" class="hero-button">
+                Ver nuestro menú
+            </a>
+        </div>
 
+    </section>
 
-/* =========================================================
-   GENERAL
-========================================================= */
 
-main section {
-    padding: 90px 7%;
-}
+    <!-- =========================
+         AVISO DEMO
+    ========================= -->
+    <div class="demo-notice">
 
-main section > p:first-child {
-    margin-bottom: 12px;
+        <strong>DEMO</strong> — Imágenes y productos utilizados únicamente
+        como referencia visual. En un proyecto real, utilizamos las
+        fotografías y contenido proporcionados por el cliente.
 
-    color: #a56b35;
+    </div>
 
-    font-size: 0.78rem;
-    font-weight: bold;
 
-    letter-spacing: 3px;
-}
+    <!-- =========================
+         NOSOTROS
+    ========================== -->
+    <section id="nosotros" class="section">
 
-h1,
-h2,
-h3 {
-    font-family: Georgia, "Times New Roman", serif;
-}
+        <div class="section-title">
 
-h2 {
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    line-height: 1.15;
-    color: #4a3021;
-}
+            <h2>Sobre Café Aurora</h2>
 
+            <p>
+                Un espacio pensado para disfrutar del buen café,
+                productos artesanales y momentos especiales.
+            </p>
 
-/* =========================================================
-   HERO
-========================================================= */
+        </div>
 
-#inicio {
-    min-height: 720px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+        <div class="about-content">
 
-    padding-left: 10%;
-    padding-right: 10%;
+            <p>
+                En Café Aurora creemos que una buena taza de café
+                puede convertir un momento cotidiano en una experiencia
+                especial.
+            </p>
 
-    color: #fff;
+            <p>
+                Nuestro concepto combina café de calidad, productos
+                artesanales y un ambiente acogedor para compartir,
+                trabajar o simplemente disfrutar.
+            </p>
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(35, 22, 15, 0.86),
-            rgba(35, 22, 15, 0.45),
-            rgba(35, 22, 15, 0.2)
-        ),
-        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=85");
+        </div>
 
-    background-size: cover;
-    background-position: center;
-}
+    </section>
 
-#inicio p:first-child {
-    color: #e3b873;
-}
 
-#inicio h1 {
-    max-width: 850px;
+    <!-- =========================
+         MENÚ
+    ========================== -->
+    <section id="menu" class="section menu-section">
 
-    margin-bottom: 22px;
+        <div class="section-title">
 
-    font-size: clamp(3rem, 7vw, 6rem);
+            <h2>Nuestro Menú</h2>
 
-    line-height: 1;
+            <p>
+                Descubre algunas de nuestras opciones favoritas.
+            </p>
 
-    color: #fff;
-}
+        </div>
 
-#inicio p:not(:first-child) {
-    max-width: 650px;
 
-    margin-bottom: 30px;
+        <!-- =========================
+             CAFÉS
+        ========================== -->
+        <div class="menu-category">
 
-    color: #f2ebe3;
+            <h3>☕ Cafés</h3>
 
-    font-size: 1.15rem;
-}
+            <div class="menu-grid">
 
-#inicio a {
-    display: inline-block;
+                <article class="producto">
+                    <img src="images/cafe_latte.png" alt="Café Latte">
 
-    margin: 5px 10px 5px 0;
+                    <div class="producto-info">
+                        <h4>Café Latte</h4>
+                        <p>Espresso suave con leche cremosa.</p>
+                        <span>$8.900</span>
+                    </div>
+                </article>
 
-    padding: 14px 27px;
 
-    border-radius: 30px;
+                <article class="producto">
+                    <img src="images/cafe_americano.png" alt="Café Americano">
 
-    background: #c28b4b;
+                    <div class="producto-info">
+                        <h4>Café Americano</h4>
+                        <p>Espresso acompañado de agua caliente.</p>
+                        <span>$7.900</span>
+                    </div>
+                </article>
 
-    color: white;
 
-    text-decoration: none;
+                <article class="producto">
+                    <img src="images/capuchino.png" alt="Capuchino">
 
-    font-weight: bold;
+                    <div class="producto-info">
+                        <h4>Capuchino</h4>
+                        <p>Espresso, leche vaporizada y espuma.</p>
+                        <span>$9.900</span>
+                    </div>
+                </article>
 
-    transition: 0.3s ease;
-}
 
-#inicio a:hover {
-    background: #a96f32;
+                <article class="producto">
+                    <img src="images/caramel_macchiato.png" alt="Caramel Macchiato">
 
-    transform: translateY(-3px);
-}
+                    <div class="producto-info">
+                        <h4>Caramel Macchiato</h4>
+                        <p>Café con leche y un toque de caramelo.</p>
+                        <span>$11.900</span>
+                    </div>
+                </article>
 
 
-/* =========================================================
-   NOSOTROS
-========================================================= */
+                <article class="producto">
+                    <img src="images/mocca.png" alt="Mocca">
 
-#nosotros {
-    text-align: center;
+                    <div class="producto-info">
+                        <h4>Mocca</h4>
+                        <p>Espresso, chocolate y leche cremosa.</p>
+                        <span>$10.900</span>
+                    </div>
+                </article>
 
-    background: #f7f1e7;
-}
 
-#nosotros h2 {
-    max-width: 850px;
+                <article class="producto">
+                    <img src="images/cafe_cortado.png" alt="Café Cortado">
 
-    margin: 0 auto 25px;
-}
+                    <div class="producto-info">
+                        <h4>Café Cortado</h4>
+                        <p>Espresso equilibrado con un toque de leche.</p>
+                        <span>$8.500</span>
+                    </div>
+                </article>
 
-#nosotros p:not(:first-child) {
-    max-width: 720px;
+            </div>
 
-    margin: 12px auto;
+        </div>
 
-    color: #66554a;
 
-    font-size: 1.05rem;
-}
+        <!-- =========================
+             BEBIDAS FRÍAS
+        ========================== -->
+        <div class="menu-category">
 
+            <h3>🧊 Bebidas frías</h3>
 
-/* =========================================================
-   MENÚ
-========================================================= */
+            <div class="menu-grid">
 
-#menu {
-    background: #fffaf3;
-}
+                <article class="producto">
+                    <img src="images/cafe_frio.png" alt="Café Frío">
 
-#menu > p,
-#menu > h2 {
-    text-align: center;
-}
+                    <div class="producto-info">
+                        <h4>Café Frío</h4>
+                        <p>Café refrescante servido frío.</p>
+                        <span>$9.900</span>
+                    </div>
+                </article>
 
-#menu > p {
-    max-width: 700px;
 
-    margin: 0 auto;
+                <article class="producto">
+                    <img src="images/frappe_de_cafe.png" alt="Frappé de Café">
 
-    color: #756256;
-}
+                    <div class="producto-info">
+                        <h4>Frappé de Café</h4>
+                        <p>Bebida fría y cremosa a base de café.</p>
+                        <span>$12.900</span>
+                    </div>
+                </article>
 
 
-/* =========================================================
-   CATEGORÍAS
-========================================================= */
+                <article class="producto">
+                    <img src="images/chocolate_frio.png" alt="Chocolate Frío">
 
-#menu > h3 {
-    max-width: 1200px;
+                    <div class="producto-info">
+                        <h4>Chocolate Frío</h4>
+                        <p>Chocolate cremoso servido frío.</p>
+                        <span>$10.900</span>
+                    </div>
+                </article>
 
-    margin: 70px auto 30px;
 
-    padding-bottom: 13px;
+                <article class="producto">
+                    <img src="images/limonada_frutos_rojos.png" alt="Limonada de Frutos Rojos">
 
-    color: #593a27;
+                    <div class="producto-info">
+                        <h4>Limonada de Frutos Rojos</h4>
+                        <p>Limonada refrescante con frutos rojos.</p>
+                        <span>$11.900</span>
+                    </div>
+                </article>
 
-    font-size: 2rem;
 
-    border-bottom: 1px solid #dbc3a2;
-}
+                <article class="producto">
+                    <img src="images/jugo_natural.png" alt="Jugo Natural">
 
+                    <div class="producto-info">
+                        <h4>Jugo Natural</h4>
+                        <p>Jugo preparado con frutas frescas.</p>
+                        <span>$9.900</span>
+                    </div>
+                </article>
 
-/* =========================================================
-   PRODUCT GRID
-========================================================= */
 
-.menu-grid {
-    width: 100%;
-    max-width: 1200px;
+                <article class="producto">
+                    <img src="images/smoothie_frutas.png" alt="Smoothie de Frutas">
 
-    margin: 0 auto;
+                    <div class="producto-info">
+                        <h4>Smoothie de Frutas</h4>
+                        <p>Mezcla cremosa de frutas seleccionadas.</p>
+                        <span>$12.900</span>
+                    </div>
+                </article>
 
-    display: grid;
+            </div>
 
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+        </div>
 
-    gap: 30px;
-}
 
+        <!-- =========================
+             TÉS E INFUSIONES
+        ========================== -->
+        <div class="menu-category">
 
-/* =========================================================
-   PRODUCT CARD
-========================================================= */
+            <h3>🍵 Tés e infusiones</h3>
 
-.producto {
-    min-width: 0;
+            <div class="menu-grid">
 
-    overflow: hidden;
+                <article class="producto">
+                    <img src="images/te_frutas.png" alt="Té de Frutas">
 
-    background: #fff;
+                    <div class="producto-info">
+                        <h4>Té de Frutas</h4>
+                        <p>Infusión aromática con frutas.</p>
+                        <span>$7.900</span>
+                    </div>
+                </article>
 
-    border: 1px solid #eee3d4;
 
-    border-radius: 20px;
+                <article class="producto">
+                    <img src="images/te_verde.png" alt="Té Verde">
 
-    box-shadow:
-        0 7px 25px rgba(69, 44, 27, 0.10);
+                    <div class="producto-info">
+                        <h4>Té Verde</h4>
+                        <p>Infusión ligera y aromática.</p>
+                        <span>$7.500</span>
+                    </div>
+                </article>
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
 
-.producto:hover {
-    transform: translateY(-8px);
+                <article class="producto">
+                    <img src="images/te_chai.png" alt="Té Chai">
 
-    box-shadow:
-        0 15px 35px rgba(69, 44, 27, 0.17);
-}
+                    <div class="producto-info">
+                        <h4>Té Chai</h4>
+                        <p>Infusión especiada y reconfortante.</p>
+                        <span>$8.900</span>
+                    </div>
+                </article>
 
 
-/* =========================================================
-   PRODUCT IMAGE
-========================================================= */
+                <article class="producto">
+                    <img src="images/te_manzanilla.png" alt="Té de Manzanilla">
 
-.producto img {
-    display: block;
+                    <div class="producto-info">
+                        <h4>Té de Manzanilla</h4>
+                        <p>Infusión suave de manzanilla.</p>
+                        <span>$7.500</span>
+                    </div>
+                </article>
 
-    width: 100%;
-    height: 245px;
 
-    object-fit: cover;
+                <article class="producto">
+                    <img src="images/te_hierbabuena.png" alt="Té de Hierbabuena">
 
-    background: #eee;
+                    <div class="producto-info">
+                        <h4>Té de Hierbabuena</h4>
+                        <p>Infusión fresca y aromática.</p>
+                        <span>$7.500</span>
+                    </div>
+                </article>
 
-    transition: transform 0.5s ease;
-}
 
-.producto:hover img {
-    transform: scale(1.04);
-}
+                <article class="producto">
+                    <img src="images/infusion_frutos_rojos.png" alt="Infusión de Frutos Rojos">
 
+                    <div class="producto-info">
+                        <h4>Infusión de Frutos Rojos</h4>
+                        <p>Infusión frutal de sabor intenso.</p>
+                        <span>$8.900</span>
+                    </div>
+                </article>
 
-/* =========================================================
-   PRODUCT INFORMATION
-========================================================= */
+            </div>
 
-.producto h3 {
-    margin: 20px 22px 8px;
+        </div>
 
-    color: #4b3020;
 
-    font-size: 1.35rem;
-}
+        <!-- =========================
+             REPOSTERÍA
+        ========================== -->
+        <div class="menu-category">
 
-.producto p {
-    min-height: 52px;
+            <h3>🥐 Repostería</h3>
 
-    margin: 0 22px 15px;
+            <div class="menu-grid">
 
-    color: #746257;
+                <article class="producto">
+                    <img src="images/croissant_artesanal.png" alt="Croissant Artesanal">
 
-    font-size: 0.95rem;
-}
+                    <div class="producto-info">
+                        <h4>Croissant Artesanal</h4>
+                        <p>Croissant horneado y crujiente.</p>
+                        <span>$6.900</span>
+                    </div>
+                </article>
 
-.producto strong {
-    display: block;
 
-    margin: 0 22px 22px;
+                <article class="producto">
+                    <img src="images/muffin_arandanos.png" alt="Muffin de Arándanos">
 
-    color: #a6672d;
+                    <div class="producto-info">
+                        <h4>Muffin de Arándanos</h4>
+                        <p>Muffin suave con arándanos.</p>
+                        <span>$7.500</span>
+                    </div>
+                </article>
 
-    font-size: 1.25rem;
-}
 
+                <article class="producto">
+                    <img src="images/brownie_chocolate.png" alt="Brownie de Chocolate">
 
-/* =========================================================
-   GALERÍA
-========================================================= */
+                    <div class="producto-info">
+                        <h4>Brownie de Chocolate</h4>
+                        <p>Brownie de chocolate con textura suave.</p>
+                        <span>$7.900</span>
+                    </div>
+                </article>
 
-#galeria {
-    text-align: center;
 
-    background: #f2e6d5;
-}
+                <article class="producto">
+                    <img src="images/cheesecake_clasico.png" alt="Cheesecake Clásico">
 
-#galeria > p:not(:first-child) {
-    max-width: 650px;
+                    <div class="producto-info">
+                        <h4>Cheesecake Clásico</h4>
+                        <p>Cheesecake cremoso de sabor clásico.</p>
+                        <span>$9.900</span>
+                    </div>
+                </article>
 
-    margin: 0 auto;
 
-    color: #6f5c4d;
-}
+                <article class="producto">
+                    <img src="images/galletas_artesanales.png" alt="Galletas Artesanales">
 
-.gallery-grid {
-    width: 100%;
-    max-width: 1100px;
+                    <div class="producto-info">
+                        <h4>Galletas Artesanales</h4>
+                        <p>Galletas recién horneadas.</p>
+                        <span>$6.500</span>
+                    </div>
+                </article>
 
-    margin: 45px auto 0;
 
-    display: grid;
+                <article class="producto">
+                    <img src="images/torta_zanahoria.png" alt="Torta de Zanahoria">
 
-    grid-template-columns: repeat(4, 1fr);
+                    <div class="producto-info">
+                        <h4>Torta de Zanahoria</h4>
+                        <p>Torta casera con especias y zanahoria.</p>
+                        <span>$8.900</span>
+                    </div>
+                </article>
 
-    gap: 18px;
-}
+            </div>
 
-.gallery-grid img {
-    display: block;
+        </div>
 
-    width: 100%;
-    height: 270px;
 
-    object-fit: cover;
+        <!-- =========================
+             SÁNDWICHES Y WRAPS
+        ========================== -->
+        <div class="menu-category">
 
-    border-radius: 18px;
+            <h3>🥪 Sándwiches y wraps</h3>
 
-    box-shadow:
-        0 7px 20px rgba(58, 39, 25, 0.15);
+            <div class="menu-grid">
 
-    transition:
-        transform 0.3s ease;
-}
+                <article class="producto">
+                    <img src="images/sandwich_pollo.png" alt="Sándwich de Pollo">
 
-.gallery-grid img:hover {
-    transform: scale(1.035);
-}
+                    <div class="producto-info">
+                        <h4>Sándwich de Pollo</h4>
+                        <p>Pollo, vegetales y salsa especial.</p>
+                        <span>$14.900</span>
+                    </div>
+                </article>
 
 
-/* =========================================================
-   CONTACTO
-========================================================= */
+                <article class="producto">
+                    <img src="images/sandwich_vegetariano.png" alt="Sándwich Vegetariano">
 
-#contacto {
-    text-align: center;
+                    <div class="producto-info">
+                        <h4>Sándwich Vegetariano</h4>
+                        <p>Vegetales frescos y queso.</p>
+                        <span>$13.900</span>
+                    </div>
+                </article>
 
-    background: #e8d6bf;
-}
 
-#contacto > p:not(:first-child) {
-    max-width: 650px;
+                <article class="producto">
+                    <img src="images/sandwich_jamon_queso.png" alt="Sándwich de Jamón y Queso">
 
-    margin: 0 auto;
+                    <div class="producto-info">
+                        <h4>Sándwich Jamón & Queso</h4>
+                        <p>Jamón, queso y pan artesanal.</p>
+                        <span>$13.900</span>
+                    </div>
+                </article>
 
-    color: #665245;
-}
 
-#contacto > div {
-    display: inline-block;
+                <article class="producto">
+                    <img src="images/sandwich_tocineta.png" alt="Sándwich de Tocineta">
 
-    vertical-align: top;
+                    <div class="producto-info">
+                        <h4>Sándwich de Tocineta</h4>
+                        <p>Tocineta crujiente, queso y vegetales.</p>
+                        <span>$15.900</span>
+                    </div>
+                </article>
 
-    width: 250px;
 
-    margin: 35px 15px 15px;
-}
+                <article class="producto">
+                    <img src="images/sandwich_caprese.png" alt="Sándwich Caprese">
 
-#contacto h3 {
-    margin-bottom: 8px;
+                    <div class="producto-info">
+                        <h4>Sándwich Caprese</h4>
+                        <p>Tomate, mozzarella y albahaca.</p>
+                        <span>$14.900</span>
+                    </div>
+                </article>
 
-    color: #593a27;
 
-    font-size: 1.25rem;
-}
+                <article class="producto">
+                    <img src="images/wrap_pollo.png" alt="Wrap de Pollo">
 
-#contacto > div p {
-    color: #6c594c;
-}
+                    <div class="producto-info">
+                        <h4>Wrap de Pollo</h4>
+                        <p>Pollo, vegetales frescos y salsa.</p>
+                        <span>$15.900</span>
+                    </div>
+                </article>
 
-#contacto > a {
-    display: inline-block;
+            </div>
 
-    margin-top: 25px;
+        </div>
 
-    padding: 15px 30px;
+    </section>
 
-    background: #3d6943;
 
-    color: white;
+    <!-- =========================
+         GALERÍA
+    ========================== -->
+    <section id="galeria" class="section">
 
-    border-radius: 30px;
+        <div class="section-title">
 
-    text-decoration: none;
+            <h2>Galería</h2>
 
-    font-weight: bold;
+            <p>
+                Algunos momentos de nuestra experiencia.
+            </p>
 
-    box-shadow: 0 5px 15px rgba(38, 75, 42, 0.2);
+        </div>
 
-    transition: 0.3s ease;
-}
 
-#contacto > a:hover {
-    background: #2f5534;
+        <div class="gallery-grid">
 
-    transform: translateY(-3px);
-}
+            <img src="images/cafe_latte.png" alt="Café Aurora">
 
+            <img src="images/croissant_artesanal.png" alt="Repostería">
 
-/* =========================================================
-   FOOTER
-========================================================= */
+            <img src="images/cafe_frio.png" alt="Bebida fría">
 
-footer {
-    padding: 50px 7%;
+            <img src="images/sandwich_pollo.png" alt="Sándwich">
 
-    text-align: center;
+        </div>
 
-    background: #302019;
+    </section>
 
-    color: #fff;
-}
 
-footer h3 {
-    margin-bottom: 8px;
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+    <section id="contacto" class="section contact-section">
 
-    color: #fff;
+        <div class="section-title">
 
-    font-size: 1.6rem;
-}
+            <h2>Visítanos</h2>
 
-footer p {
-    margin: 6px;
+            <p>
+                Ven a disfrutar de Café Aurora.
+            </p>
 
-    color: #d8cbc0;
-}
+        </div>
 
 
-/* =========================================================
-   TABLET
-========================================================= */
+        <div class="contact-info">
 
-@media (max-width: 950px) {
+            <p>📍 Dirección: Calle Principal #123</p>
 
-    header {
-        padding: 17px 5%;
-    }
+            <p>📞 Teléfono: 300 000 0000</p>
 
-    nav {
-        gap: 17px;
-    }
+            <p>📧 Email: contacto@cafeaurora.com</p>
 
-    .menu-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+            <p>🕐 Horario: Lunes a Domingo — 8:00 AM a 8:00 PM</p>
 
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+        </div>
 
-    #inicio {
-        padding-left: 7%;
-        padding-right: 7%;
-    }
-}
+    </section>
 
 
-/* =========================================================
-   CELULAR
-========================================================= */
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
 
-@media (max-width: 650px) {
+        <p>
+            © 2026 Café Aurora — Proyecto DEMO
+        </p>
 
-    header {
-        position: relative;
+        <p>
+            Sitio web desarrollado como demostración.
+        </p>
 
-        flex-direction: column;
+    </footer>
 
-        gap: 13px;
 
-        padding: 17px 4%;
-    }
-
-    .logo {
-        font-size: 1.45rem;
-    }
-
-    nav {
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        gap: 12px 18px;
-    }
-
-    nav a {
-        font-size: 0.85rem;
-    }
-
-    main section {
-        padding: 65px 5%;
-    }
-
-    #inicio {
-        min-height: 650px;
-
-        padding: 80px 7%;
-    }
-
-    #inicio h1 {
-        font-size: 3.1rem;
-    }
-
-    #inicio p:not(:first-child) {
-        font-size: 1rem;
-    }
-
-    #menu > h3 {
-        margin-top: 50px;
-
-        font-size: 1.7rem;
-    }
-
-    .menu-grid {
-        grid-template-columns: 1fr;
-
-        gap: 25px;
-    }
-
-    .producto img {
-        height: 250px;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
-
-        gap: 20px;
-    }
-
-    .gallery-grid img {
-        height: 280px;
-    }
-
-    #contacto > div {
-        display: block;
-
-        width: 100%;
-
-        margin: 30px 0;
-    }
-}
-
-
-/* =========================================================
-   TELÉFONOS PEQUEÑOS
-========================================================= */
-
-@media (max-width: 400px) {
-
-    #inicio h1 {
-        font-size: 2.6rem;
-    }
-
-    #inicio a {
-        width: 100%;
-
-        text-align: center;
-    }
-
-    .producto img {
-        height: 220px;
-    }
-}
+</body>
+</html>
 ```

@@ -1,15 +1,11 @@
 ```html
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Café Aurora | El sabor que comienza tu día.</title>
-
-    <meta name="description"
-        content="Café Aurora: café artesanal, bebidas, repostería y productos frescos para disfrutar cada momento.">
+    <title>Café Aurora | Más que café, una experiencia</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,11 +13,9 @@
 <body>
 
     <!-- =========================
-         NAVEGACIÓN
+         ENCABEZADO
     ========================== -->
-
     <header>
-
         <div class="logo">
             ☕ Café Aurora
         </div>
@@ -33,773 +27,558 @@
             <a href="#galeria">Galería</a>
             <a href="#contacto">Contacto</a>
         </nav>
-
     </header>
 
 
     <!-- =========================
-         INICIO
+         HERO
     ========================== -->
+    <section id="inicio" class="hero">
 
-    <main>
-
-        <section id="inicio">
-
-            <p>CAFÉ ARTESANAL · REPOSTERÍA · BEBIDAS</p>
-
-            <h1>
-                El sabor que comienza tu día.
-            </h1>
+        <div class="hero-content">
+            <h1>Café Aurora</h1>
 
             <p>
-                Más que café, una experiencia.
-                Disfruta productos preparados con cariño,
-                ingredientes de calidad y sabores para cada momento.
+                Más que café, una experiencia
             </p>
 
-            <a href="#menu">
+            <a href="#menu" class="hero-button">
                 Ver nuestro menú
             </a>
+        </div>
 
-            <a href="#contacto">
-                Contáctanos
-            </a>
-
-        </section>
+    </section>
 
 
-        <!-- =========================
-             NOSOTROS
-        ========================== -->
+    <!-- =========================
+         AVISO DEMO
+    ========================== -->
+    <div class="demo-notice">
 
-        <section id="nosotros">
+        <strong>DEMO</strong> — Imágenes y productos utilizados únicamente
+        como referencia visual. En un proyecto real, utilizamos las
+        fotografías y contenido proporcionados por el cliente.
 
-            <p>NUESTRA HISTORIA</p>
+    </div>
 
-            <h2>
-                Hecho con cariño, servido con pasión.
-            </h2>
+
+    <!-- =========================
+         NOSOTROS
+    ========================== -->
+    <section id="nosotros" class="section">
+
+        <div class="section-title">
+            <h2>Sobre Café Aurora</h2>
 
             <p>
-                En Café Aurora creemos que un buen día puede comenzar
-                con algo tan sencillo como una taza de café preparada
-                con dedicación.
+                Un espacio pensado para disfrutar del buen café,
+                productos artesanales y momentos especiales.
+            </p>
+        </div>
+
+        <div class="about-content">
+
+            <p>
+                En Café Aurora creemos que una buena taza de café
+                puede convertir un momento cotidiano en una experiencia
+                especial.
             </p>
 
             <p>
-                Seleccionamos ingredientes de calidad y preparamos
-                cada producto pensando en ofrecer una experiencia
-                agradable, cercana y deliciosa.
+                Nuestro concepto combina café de calidad, productos
+                artesanales y un ambiente acogedor para compartir,
+                trabajar o simplemente disfrutar.
             </p>
 
-        </section>
+        </div>
+
+    </section>
 
 
-        <!-- =========================
-             MENÚ
-        ========================== -->
+    <!-- =========================
+         MENÚ
+    ========================== -->
+    <section id="menu" class="section menu-section">
 
-        <section id="menu">
+        <div class="section-title">
 
-            <p>NUESTRO MENÚ</p>
-
-            <h2>
-                Algo delicioso para cada momento.
-            </h2>
+            <h2>Nuestro Menú</h2>
 
             <p>
-                Explora nuestras bebidas, cafés, repostería y opciones
-                para acompañar tu día.
+                Descubre algunas de nuestras opciones favoritas.
             </p>
 
+        </div>
 
-            <!-- =========================
-                 CAFÉS
-            ========================== -->
+
+        <!-- CAFÉS -->
+        <div class="menu-category">
 
             <h3>☕ Cafés</h3>
 
             <div class="menu-grid">
 
                 <article class="producto">
-
-                    <img src="images/cafe_latte.png"
-                        alt="Café Latte">
-
-                    <h3>Café Latte</h3>
-
-                    <p>
-                        Espresso con leche vaporizada
-                        y textura suave.
-                    </p>
-
-                    <strong>$10.000</strong>
-
+                    <img src="images/cafe_latte.png" alt="Café Latte">
+                    <div class="producto-info">
+                        <h4>Café Latte</h4>
+                        <p>Espresso suave con leche cremosa.</p>
+                        <span>$8.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/cafe_americano.png"
-                        alt="Café Americano">
-
-                    <h3>Café Americano</h3>
-
-                    <p>
-                        Café recién preparado con
-                        sabor intenso y aromático.
-                    </p>
-
-                    <strong>$6.000</strong>
-
+                    <img src="images/cafe_americano.png" alt="Café Americano">
+                    <div class="producto-info">
+                        <h4>Café Americano</h4>
+                        <p>Espresso acompañado de agua caliente.</p>
+                        <span>$7.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/capuchino.png"
-                        alt="Capuchino">
-
-                    <h3>Capuchino</h3>
-
-                    <p>
-                        Espresso, leche cremosa y
-                        delicada espuma.
-                    </p>
-
-                    <strong>$9.000</strong>
-
+                    <img src="images/capuchino.png" alt="Capuchino">
+                    <div class="producto-info">
+                        <h4>Capuchino</h4>
+                        <p>Espresso, leche vaporizada y espuma.</p>
+                        <span>$9.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/caramel_macchiato.png"
-                        alt="Caramel Macchiato">
-
-                    <h3>Caramel Macchiato</h3>
-
-                    <p>
-                        Café suave con leche y
-                        un toque de caramelo.
-                    </p>
-
-                    <strong>$12.000</strong>
-
+                    <img src="images/caramel_macchiato.png" alt="Caramel Macchiato">
+                    <div class="producto-info">
+                        <h4>Caramel Macchiato</h4>
+                        <p>Café con leche y un toque de caramelo.</p>
+                        <span>$11.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/mocca.png"
-                        alt="Mocca">
-
-                    <h3>Mocca</h3>
-
-                    <p>
-                        Café espresso combinado
-                        con chocolate y leche.
-                    </p>
-
-                    <strong>$11.000</strong>
-
+                    <img src="images/mocca.png" alt="Mocca">
+                    <div class="producto-info">
+                        <h4>Mocca</h4>
+                        <p>Espresso, chocolate y leche cremosa.</p>
+                        <span>$10.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/cafe_cortado.png"
-                        alt="Café Cortado">
-
-                    <h3>Café Cortado</h3>
-
-                    <p>
-                        Espresso equilibrado con
-                        un toque de leche.
-                    </p>
-
-                    <strong>$8.000</strong>
-
+                    <img src="images/cafe_cortado.png" alt="Café Cortado">
+                    <div class="producto-info">
+                        <h4>Café Cortado</h4>
+                        <p>Espresso equilibrado con un toque de leche.</p>
+                        <span>$8.500</span>
+                    </div>
                 </article>
 
             </div>
+        </div>
 
 
-            <!-- =========================
-                 BEBIDAS FRÍAS
-            ========================== -->
+        <!-- BEBIDAS FRÍAS -->
+        <div class="menu-category">
 
             <h3>🧊 Bebidas frías</h3>
 
             <div class="menu-grid">
 
                 <article class="producto">
-
-                    <img src="images/cafe_frio.png"
-                        alt="Café frío">
-
-                    <h3>Café Frío</h3>
-
-                    <p>
-                        Café refrescante servido
-                        frío para cualquier momento.
-                    </p>
-
-                    <strong>$9.000</strong>
-
+                    <img src="images/cafe_frio.png" alt="Café Frío">
+                    <div class="producto-info">
+                        <h4>Café Frío</h4>
+                        <p>Café refrescante servido frío.</p>
+                        <span>$9.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/frappe_de_cafe.png"
-                        alt="Frappe de café">
-
-                    <h3>Frappe de Café</h3>
-
-                    <p>
-                        Café frío, cremoso y
-                        refrescante.
-                    </p>
-
-                    <strong>$13.000</strong>
-
+                    <img src="images/frappe_de_cafe.png" alt="Frappé de Café">
+                    <div class="producto-info">
+                        <h4>Frappé de Café</h4>
+                        <p>Bebida fría y cremosa a base de café.</p>
+                        <span>$12.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/chocolate_frio.png"
-                        alt="Chocolate frío">
-
-                    <h3>Chocolate Frío</h3>
-
-                    <p>
-                        Bebida cremosa de chocolate
-                        servida fría.
-                    </p>
-
-                    <strong>$10.000</strong>
-
+                    <img src="images/chocolate_frio.png" alt="Chocolate Frío">
+                    <div class="producto-info">
+                        <h4>Chocolate Frío</h4>
+                        <p>Chocolate cremoso servido frío.</p>
+                        <span>$10.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/limonada_frutos_rojos.png"
-                        alt="Limonada de frutos rojos">
-
-                    <h3>Limonada de Frutos Rojos</h3>
-
-                    <p>
-                        Limonada refrescante con
-                        frutos rojos.
-                    </p>
-
-                    <strong>$11.000</strong>
-
+                    <img src="images/limonada_frutos_rojos.png" alt="Limonada de Frutos Rojos">
+                    <div class="producto-info">
+                        <h4>Limonada de Frutos Rojos</h4>
+                        <p>Limonada refrescante con frutos rojos.</p>
+                        <span>$11.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/jugo_natural.png"
-                        alt="Jugo natural">
-
-                    <h3>Jugo Natural</h3>
-
-                    <p>
-                        Jugo preparado con fruta
-                        fresca.
-                    </p>
-
-                    <strong>$9.000</strong>
-
+                    <img src="images/jugo_natural.png" alt="Jugo Natural">
+                    <div class="producto-info">
+                        <h4>Jugo Natural</h4>
+                        <p>Jugo preparado con frutas frescas.</p>
+                        <span>$9.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/smoothie_frutas.png"
-                        alt="Smoothie de frutas">
-
-                    <h3>Smoothie de Frutas</h3>
-
-                    <p>
-                        Mezcla cremosa de frutas
-                        frescas.
-                    </p>
-
-                    <strong>$13.000</strong>
-
+                    <img src="images/smoothie_frutas.png" alt="Smoothie de Frutas">
+                    <div class="producto-info">
+                        <h4>Smoothie de Frutas</h4>
+                        <p>Mezcla cremosa de frutas seleccionadas.</p>
+                        <span>$12.900</span>
+                    </div>
                 </article>
 
             </div>
+        </div>
 
 
-            <!-- =========================
-                 TÉS
-            ========================== -->
+        <!-- TÉS -->
+        <div class="menu-category">
 
             <h3>🍵 Tés e infusiones</h3>
 
             <div class="menu-grid">
 
                 <article class="producto">
-
-                    <img src="images/te_frutas.png"
-                        alt="Té de frutas">
-
-                    <h3>Té de Frutas</h3>
-
-                    <p>
-                        Infusión aromática con
-                        notas frutales.
-                    </p>
-
-                    <strong>$7.000</strong>
-
+                    <img src="images/te_frutas.png" alt="Té de Frutas">
+                    <div class="producto-info">
+                        <h4>Té de Frutas</h4>
+                        <p>Infusión aromática con frutas.</p>
+                        <span>$7.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/te_verde.png"
-                        alt="Té verde">
-
-                    <h3>Té Verde</h3>
-
-                    <p>
-                        Infusión ligera y
-                        refrescante.
-                    </p>
-
-                    <strong>$7.000</strong>
-
+                    <img src="images/te_verde.png" alt="Té Verde">
+                    <div class="producto-info">
+                        <h4>Té Verde</h4>
+                        <p>Infusión ligera y aromática.</p>
+                        <span>$7.500</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/te_chai.png"
-                        alt="Té Chai">
-
-                    <h3>Té Chai</h3>
-
-                    <p>
-                        Infusión especiada con
-                        aromas cálidos.
-                    </p>
-
-                    <strong>$8.000</strong>
-
+                    <img src="images/te_chai.png" alt="Té Chai">
+                    <div class="producto-info">
+                        <h4>Té Chai</h4>
+                        <p>Infusión especiada y reconfortante.</p>
+                        <span>$8.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/te_manzanilla.png"
-                        alt="Té de manzanilla">
-
-                    <h3>Manzanilla</h3>
-
-                    <p>
-                        Infusión suave y aromática.
-                    </p>
-
-                    <strong>$6.000</strong>
-
+                    <img src="images/te_manzanilla.png" alt="Té de Manzanilla">
+                    <div class="producto-info">
+                        <h4>Té de Manzanilla</h4>
+                        <p>Infusión suave de manzanilla.</p>
+                        <span>$7.500</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/te_hierbabuena.png"
-                        alt="Té de hierbabuena">
-
-                    <h3>Hierbabuena</h3>
-
-                    <p>
-                        Infusión fresca y
-                        aromática.
-                    </p>
-
-                    <strong>$6.000</strong>
-
+                    <img src="images/te_hierbabuena.png" alt="Té de Hierbabuena">
+                    <div class="producto-info">
+                        <h4>Té de Hierbabuena</h4>
+                        <p>Infusión fresca y aromática.</p>
+                        <span>$7.500</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/infusion_frutos_rojos.png"
-                        alt="Infusión de frutos rojos">
-
-                    <h3>Infusión de Frutos Rojos</h3>
-
-                    <p>
-                        Infusión con un delicioso
-                        aroma frutal.
-                    </p>
-
-                    <strong>$8.000</strong>
-
+                    <img src="images/infusion_frutos_rojos.png" alt="Infusión de Frutos Rojos">
+                    <div class="producto-info">
+                        <h4>Infusión de Frutos Rojos</h4>
+                        <p>Infusión frutal de sabor intenso.</p>
+                        <span>$8.900</span>
+                    </div>
                 </article>
 
             </div>
+        </div>
 
 
-            <!-- =========================
-                 REPOSTERÍA
-            ========================== -->
+        <!-- REPOSTERÍA -->
+        <div class="menu-category">
 
             <h3>🥐 Repostería</h3>
 
             <div class="menu-grid">
 
                 <article class="producto">
-
-                    <img src="images/croissant_artesanal.png"
-                        alt="Croissant artesanal">
-
-                    <h3>Croissant Artesanal</h3>
-
-                    <p>
-                        Croissant recién horneado,
-                        crujiente y suave.
-                    </p>
-
-                    <strong>$8.000</strong>
-
+                    <img src="images/croissant_artesanal.png" alt="Croissant Artesanal">
+                    <div class="producto-info">
+                        <h4>Croissant Artesanal</h4>
+                        <p>Croissant horneado y crujiente.</p>
+                        <span>$6.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/muffin_arandanos.png"
-                        alt="Muffin de arándanos">
-
-                    <h3>Muffin de Arándanos</h3>
-
-                    <p>
-                        Muffin suave con deliciosos
-                        arándanos.
-                    </p>
-
-                    <strong>$8.000</strong>
-
+                    <img src="images/muffin_arandanos.png" alt="Muffin de Arándanos">
+                    <div class="producto-info">
+                        <h4>Muffin de Arándanos</h4>
+                        <p>Muffin suave con arándanos.</p>
+                        <span>$7.500</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/brownie_chocolate.png"
-                        alt="Brownie de chocolate">
-
-                    <h3>Brownie de Chocolate</h3>
-
-                    <p>
-                        Brownie suave y chocolatoso.
-                    </p>
-
-                    <strong>$9.000</strong>
-
+                    <img src="images/brownie_chocolate.png" alt="Brownie de Chocolate">
+                    <div class="producto-info">
+                        <h4>Brownie de Chocolate</h4>
+                        <p>Brownie de chocolate con textura suave.</p>
+                        <span>$7.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/cheesecake_clasico.png"
-                        alt="Cheesecake clásico">
-
-                    <h3>Cheesecake Clásico</h3>
-
-                    <p>
-                        Postre cremoso y suave
-                        para cualquier momento.
-                    </p>
-
-                    <strong>$12.000</strong>
-
+                    <img src="images/cheesecake_clasico.png" alt="Cheesecake Clásico">
+                    <div class="producto-info">
+                        <h4>Cheesecake Clásico</h4>
+                        <p>Cheesecake cremoso de sabor clásico.</p>
+                        <span>$9.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/galletas_artesanales.png"
-                        alt="Galletas artesanales">
-
-                    <h3>Galletas Artesanales</h3>
-
-                    <p>
-                        Galletas horneadas con
-                        ingredientes seleccionados.
-                    </p>
-
-                    <strong>$7.000</strong>
-
+                    <img src="images/galletas_artesanales.png" alt="Galletas Artesanales">
+                    <div class="producto-info">
+                        <h4>Galletas Artesanales</h4>
+                        <p>Galletas recién horneadas.</p>
+                        <span>$6.500</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/torta_zanahoria.png"
-                        alt="Torta de zanahoria">
-
-                    <h3>Torta de Zanahoria</h3>
-
-                    <p>
-                        Torta suave con un toque
-                        especial de especias.
-                    </p>
-
-                    <strong>$10.000</strong>
-
+                    <img src="images/torta_zanahoria.png" alt="Torta de Zanahoria">
+                    <div class="producto-info">
+                        <h4>Torta de Zanahoria</h4>
+                        <p>Torta casera con especias y zanahoria.</p>
+                        <span>$8.900</span>
+                    </div>
                 </article>
 
             </div>
+        </div>
 
 
-            <!-- =========================
-                 SÁNDWICHES
-            ========================== -->
+        <!-- SÁNDWICHES -->
+        <div class="menu-category">
 
             <h3>🥪 Sándwiches y wraps</h3>
 
             <div class="menu-grid">
 
                 <article class="producto">
-
-                    <img src="images/sandwich_pollo.png"
-                        alt="Sándwich de pollo">
-
-                    <h3>Sándwich de Pollo</h3>
-
-                    <p>
-                        Pollo, vegetales frescos
-                        y nuestro pan artesanal.
-                    </p>
-
-                    <strong>$18.000</strong>
-
+                    <img src="images/sandwich_pollo.png" alt="Sándwich de Pollo">
+                    <div class="producto-info">
+                        <h4>Sándwich de Pollo</h4>
+                        <p>Pollo, vegetales y salsa especial.</p>
+                        <span>$14.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/sandwich_vegetariano.png"
-                        alt="Sándwich vegetariano">
-
-                    <h3>Sándwich Vegetariano</h3>
-
-                    <p>
-                        Vegetales frescos y
-                        sabores naturales.
-                    </p>
-
-                    <strong>$16.000</strong>
-
+                    <img src="images/sandwich_vegetariano.png" alt="Sándwich Vegetariano">
+                    <div class="producto-info">
+                        <h4>Sándwich Vegetariano</h4>
+                        <p>Vegetales frescos y queso.</p>
+                        <span>$13.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/sandwich_jamon_queso.png"
-                        alt="Sándwich de jamón y queso">
-
-                    <h3>Jamón & Queso</h3>
-
-                    <p>
-                        Una combinación clásica
-                        para cualquier momento.
-                    </p>
-
-                    <strong>$15.000</strong>
-
+                    <img src="images/sandwich_jamon_queso.png" alt="Sándwich de Jamón y Queso">
+                    <div class="producto-info">
+                        <h4>Sándwich Jamón & Queso</h4>
+                        <p>Jamón, queso y pan artesanal.</p>
+                        <span>$13.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/sandwich_tocineta.png"
-                        alt="Sándwich de tocineta">
-
-                    <h3>Sándwich de Tocineta</h3>
-
-                    <p>
-                        Tocineta, queso y vegetales
-                        en pan artesanal.
-                    </p>
-
-                    <strong>$19.000</strong>
-
+                    <img src="images/sandwich_tocineta.png" alt="Sándwich de Tocineta">
+                    <div class="producto-info">
+                        <h4>Sándwich de Tocineta</h4>
+                        <p>Tocineta crujiente, queso y vegetales.</p>
+                        <span>$15.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/sandwich_caprese.png"
-                        alt="Sándwich Caprese">
-
-                    <h3>Sándwich Caprese</h3>
-
-                    <p>
-                        Tomate, queso y frescura
-                        en cada bocado.
-                    </p>
-
-                    <strong>$17.000</strong>
-
+                    <img src="images/sandwich_caprese.png" alt="Sándwich Caprese">
+                    <div class="producto-info">
+                        <h4>Sándwich Caprese</h4>
+                        <p>Tomate, mozzarella y albahaca.</p>
+                        <span>$14.900</span>
+                    </div>
                 </article>
 
 
                 <article class="producto">
-
-                    <img src="images/wrap_pollo.png"
-                        alt="Wrap de pollo">
-
-                    <h3>Wrap de Pollo</h3>
-
-                    <p>
-                        Pollo, vegetales y salsa
-                        en una tortilla suave.
-                    </p>
-
-                    <strong>$18.000</strong>
-
+                    <img src="images/wrap_pollo.png" alt="Wrap de Pollo">
+                    <div class="producto-info">
+                        <h4>Wrap de Pollo</h4>
+                        <p>Pollo, vegetales frescos y salsa.</p>
+                        <span>$15.900</span>
+                    </div>
                 </article>
 
             </div>
+        </div>
 
-        </section>
+    </section>
 
 
-        <!-- =========================
-             GALERÍA
-        ========================== -->
+    <!-- =========================
+         GALERÍA
+    ========================== -->
+    <section id="galeria" class="section">
 
-        <section id="galeria">
+        <div class="section-title">
 
-            <p>GALERÍA</p>
-
-            <h2>
-                Un lugar para disfrutar.
-            </h2>
+            <h2>Galería</h2>
 
             <p>
-                Una pequeña muestra de los sabores
-                que hacen especial a Café Aurora.
+                Algunos momentos de nuestra experiencia.
             </p>
 
-            <div class="gallery-grid">
-
-                <img src="images/cafe_latte.png"
-                    alt="Café Latte">
-
-                <img src="images/croissant_artesanal.png"
-                    alt="Croissant artesanal">
-
-                <img src="images/cheesecake_clasico.png"
-                    alt="Cheesecake">
-
-                <img src="images/cafe_frio.png"
-                    alt="Café frío">
-
-            </div>
-
-        </section>
+        </div>
 
 
-        <!-- =========================
-             CONTACTO
-        ========================== -->
+        <div class="gallery-grid">
 
-        <section id="contacto">
+            <img src="images/cafe_latte.png" alt="Café Aurora">
 
-            <p>VISÍTANOS</p>
+            <img src="images/croissant_artesanal.png" alt="Repostería">
 
-            <h2>
-                Tu próxima taza está esperándote.
-            </h2>
+            <img src="images/cafe_frio.png" alt="Bebida fría">
+
+            <img src="images/sandwich_pollo.png" alt="Sándwich">
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+    <section id="contacto" class="section contact-section">
+
+        <div class="section-title">
+
+            <h2>Visítanos</h2>
 
             <p>
-                Ven a disfrutar de un buen café,
-                algo delicioso y un momento tranquilo.
+                Ven a disfrutar de Café Aurora.
             </p>
 
-
-            <div>
-
-                <h3>📍 Dirección</h3>
-
-                <p>
-                    Calle 10 #15-20, Cali
-                </p>
-
-            </div>
+        </div>
 
 
-            <div>
+        <div class="contact-info">
 
-                <h3>🕐 Horario</h3>
+            <p>📍 Dirección: Calle Principal #123</p>
 
-                <p>
-                    Lunes a sábado · 8:00 AM – 7:00 PM
-                </p>
+            <p>📞 Teléfono: 300 000 0000</p>
 
-            </div>
+            <p>📧 Email: contacto@cafeaurora.com</p>
 
+            <p>🕐 Horario: Lunes a Domingo — 8:00 AM a 8:00 PM</p>
 
-            <div>
+        </div>
 
-                <h3>📱 WhatsApp</h3>
+    </section>
 
-                <p>
-                    300 000 0000
-                </p>
-
-            </div>
-
-
-            <a
-                href="https://wa.me/573000000000"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                Escribir por WhatsApp
-
-            </a>
-
-        </section>
-
-    </main>
-<div class="demo-notice">
-    <strong>DEMO</strong> — Imágenes y productos utilizados únicamente como referencia visual.
-    En un proyecto real, utilizamos las fotografías y contenido proporcionados por el cliente.
-</div>
 
     <!-- =========================
          PIE DE PÁGINA
     ========================== -->
-
     <footer>
 
-        <h3>
-            ☕ Café Aurora
-        </h3>
-
         <p>
-            Más que café, una experiencia.
+            © 2026 Café Aurora — Proyecto DEMO
         </p>
 
         <p>
-            © 2026 Café Aurora.
-            Todos los derechos reservados.
+            Sitio web desarrollado como demostración.
         </p>
 
     </footer>
 
 
 </body>
-
 </html>
 ```
+
+Y agrega **al final de tu `style.css`** este bloque:
+
+```css
+/* =========================
+   AVISO DEMO
+========================= */
+
+.demo-notice {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 14px 20px;
+
+    text-align: center;
+
+    background: #efe3d2;
+    color: #5a4030;
+
+    border: 1px solid #d5b995;
+    border-radius: 10px;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    box-sizing: border-box;
+}
+
+.demo-notice strong {
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+```
+
+**No necesitas reemplazar todo el `style.css`** por este segundo bloque: simplemente agrégalo al final del CSS que ya tienes.
+
+Después haces **Commit changes → esperas unos segundos → Ctrl + F5** en la página pública.
+
+Así nuestro **Café Aurora** ya queda oficialmente identificado como **DEMO del paquete Esencial**. ☕💻

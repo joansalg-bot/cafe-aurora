@@ -1,7 +1,7 @@
 ```css
 /* =====================================================
-   CAFÉ AURORA — DEMO ESENCIAL
-   Diseño elegante / cafetería premium
+   CAFÉ AURORA
+   DEMO — PLAN ESENCIAL
 ===================================================== */
 
 
@@ -42,17 +42,19 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    padding: 18px 7%;
+    padding: 17px 7%;
 
-    background: rgba(38, 27, 21, 0.97);
+    background: rgba(38, 27, 21, 0.98);
 
     border-bottom: 1px solid rgba(213, 176, 116, 0.25);
 }
 
 .logo {
     color: #f1d39b;
+
     font-size: 25px;
     font-weight: bold;
+
     letter-spacing: 1px;
 }
 
@@ -64,8 +66,12 @@ nav {
 
 nav a {
     color: #f5eee5;
+
     text-decoration: none;
-    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
     transition: 0.3s ease;
 }
 
@@ -79,7 +85,7 @@ nav a:hover {
 ===================================================== */
 
 .hero {
-    min-height: 650px;
+    min-height: 620px;
 
     display: flex;
     align-items: center;
@@ -89,7 +95,7 @@ nav a:hover {
 
     background:
         linear-gradient(
-            rgba(25, 17, 13, 0.55),
+            rgba(25, 17, 13, 0.52),
             rgba(25, 17, 13, 0.68)
         ),
         url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=85");
@@ -102,29 +108,31 @@ nav a:hover {
 
 .hero-content {
     max-width: 850px;
+
     padding: 40px 25px;
 
     color: white;
 }
 
 .hero-content h1 {
-    font-size: clamp(55px, 8vw, 100px);
-    line-height: 1.05;
-
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     color: #f5d59d;
+
+    font-size: clamp(55px, 8vw, 100px);
+
+    line-height: 1.05;
 
     text-shadow:
         0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
-    font-size: clamp(22px, 3vw, 34px);
-
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 
     color: #ffffff;
+
+    font-size: clamp(21px, 3vw, 34px);
 
     letter-spacing: 1px;
 }
@@ -132,17 +140,19 @@ nav a:hover {
 .hero-button {
     display: inline-block;
 
-    padding: 15px 32px;
+    padding: 14px 32px;
 
     background: #c99a55;
-    color: #261b15;
 
-    text-decoration: none;
+    color: #261b15;
 
     border-radius: 30px;
 
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
     font-weight: bold;
-    font-size: 16px;
 
     transition: all 0.3s ease;
 
@@ -167,9 +177,9 @@ nav a:hover {
 .demo-notice {
     width: min(1100px, 90%);
 
-    margin: 35px auto 10px;
+    margin: 28px auto 0;
 
-    padding: 18px 25px;
+    padding: 16px 22px;
 
     text-align: center;
 
@@ -183,9 +193,9 @@ nav a:hover {
 
     font-family: Arial, sans-serif;
 
-    font-size: 14px;
+    font-size: 13px;
 
-    line-height: 1.7;
+    line-height: 1.6;
 
     box-shadow:
         0 5px 20px rgba(66, 43, 25, 0.06);
@@ -198,13 +208,15 @@ nav a:hover {
 
     padding: 3px 9px;
 
-    border-radius: 5px;
-
     background: #3b2a21;
 
     color: #f4d39b;
 
-    font-size: 11px;
+    border-radius: 5px;
+
+    font-size: 10px;
+
+    font-weight: bold;
 
     letter-spacing: 1.5px;
 }
@@ -219,27 +231,25 @@ nav a:hover {
 
     margin: 0 auto;
 
-    padding: 90px 0;
+    padding: 80px 0;
 }
 
 .section-title {
     max-width: 750px;
 
-    margin: 0 auto 55px;
+    margin: 0 auto 48px;
 
     text-align: center;
 }
 
 .section-title h2 {
-    position: relative;
-
     display: inline-block;
 
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 
     color: #3a291f;
 
-    font-size: clamp(32px, 5vw, 48px);
+    font-size: clamp(32px, 5vw, 46px);
 }
 
 .section-title h2::after {
@@ -247,10 +257,10 @@ nav a:hover {
 
     display: block;
 
-    width: 55px;
+    width: 52px;
     height: 3px;
 
-    margin: 14px auto 0;
+    margin: 13px auto 0;
 
     background: #c99a55;
 
@@ -260,12 +270,14 @@ nav a:hover {
 .section-title p {
     color: #765f4d;
 
-    font-size: 17px;
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
 }
 
 
 /* =====================================================
-   SOBRE NOSOTROS
+   NOSOTROS
 ===================================================== */
 
 #nosotros {
@@ -277,24 +289,26 @@ nav a:hover {
 
     margin: 0 auto;
 
-    padding: 40px;
+    padding: 35px 40px;
 
     background: #fffaf3;
 
-    border-radius: 20px;
-
     border: 1px solid #eadbc6;
+
+    border-radius: 18px;
 
     box-shadow:
         0 10px 35px rgba(69, 43, 24, 0.07);
 }
 
 .about-content p {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 
     color: #614c3d;
 
-    font-size: 17px;
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
 }
 
 .about-content p:last-child {
@@ -311,24 +325,24 @@ nav a:hover {
 }
 
 .menu-category {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 .menu-category h3 {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 
-    padding-bottom: 12px;
+    padding-bottom: 10px;
 
     color: #3a291f;
 
-    font-size: 30px;
+    font-size: 29px;
 
     border-bottom: 1px solid #dec9aa;
 }
 
 
 /* =====================================================
-   GRID DE PRODUCTOS
+   GRID PRODUCTOS
 ===================================================== */
 
 .menu-grid {
@@ -337,7 +351,7 @@ nav a:hover {
     grid-template-columns:
         repeat(3, minmax(0, 1fr));
 
-    gap: 28px;
+    gap: 25px;
 }
 
 
@@ -348,14 +362,17 @@ nav a:hover {
 .producto {
     overflow: hidden;
 
+    display: flex;
+    flex-direction: column;
+
     background: #fffdf9;
 
     border: 1px solid #eadfce;
 
-    border-radius: 18px;
+    border-radius: 17px;
 
     box-shadow:
-        0 8px 25px rgba(56, 36, 23, 0.08);
+        0 7px 22px rgba(56, 36, 23, 0.07);
 
     transition:
         transform 0.3s ease,
@@ -363,22 +380,22 @@ nav a:hover {
 }
 
 .producto:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
 
     box-shadow:
-        0 18px 40px rgba(56, 36, 23, 0.15);
+        0 15px 32px rgba(56, 36, 23, 0.13);
 }
 
 
 /* =====================================================
-   IMÁGENES DE PRODUCTOS
+   IMÁGENES
 ===================================================== */
 
 .producto img {
     display: block;
 
     width: 100%;
-    height: 250px;
+    height: 225px;
 
     object-fit: cover;
 
@@ -386,44 +403,55 @@ nav a:hover {
 }
 
 .producto:hover img {
-    transform: scale(1.04);
+    transform: scale(1.035);
 }
 
 
 /* =====================================================
-   INFORMACIÓN DEL PRODUCTO
+   INFORMACIÓN PRODUCTO
 ===================================================== */
 
 .producto-info {
-    padding: 22px 22px 24px;
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 18px 20px 19px;
 }
 
 .producto-info h4 {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 
     color: #3b2a21;
 
-    font-size: 21px;
+    font-size: 20px;
+
+    line-height: 1.3;
 }
 
 .producto-info p {
-    min-height: 50px;
+    min-height: 43px;
 
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     color: #796555;
 
     font-family: Arial, sans-serif;
 
-    font-size: 14px;
+    font-size: 13px;
+
+    line-height: 1.5;
 }
 
 .producto-info span {
+    margin-top: auto;
+
     color: #a36f2e;
 
     font-family: Arial, sans-serif;
 
-    font-size: 19px;
+    font-size: 18px;
 
     font-weight: bold;
 }
@@ -443,21 +471,21 @@ nav a:hover {
     grid-template-columns:
         repeat(4, minmax(0, 1fr));
 
-    gap: 18px;
+    gap: 17px;
 }
 
 .gallery-grid img {
-    width: 100%;
-    height: 260px;
-
     display: block;
+
+    width: 100%;
+    height: 250px;
 
     object-fit: cover;
 
-    border-radius: 15px;
+    border-radius: 14px;
 
     box-shadow:
-        0 8px 25px rgba(50, 32, 21, 0.12);
+        0 7px 22px rgba(50, 32, 21, 0.11);
 
     transition: transform 0.3s ease;
 }
@@ -480,15 +508,15 @@ nav a:hover {
 .contact-info {
     display: grid;
 
-    gap: 12px;
+    gap: 10px;
 
-    padding: 40px;
+    padding: 35px 30px;
 
     background: #33241c;
 
     color: #f5eee5;
 
-    border-radius: 20px;
+    border-radius: 18px;
 
     box-shadow:
         0 15px 40px rgba(42, 27, 18, 0.15);
@@ -497,7 +525,7 @@ nav a:hover {
 .contact-info p {
     font-family: Arial, sans-serif;
 
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .contact-info p:first-child {
@@ -510,7 +538,7 @@ nav a:hover {
 ===================================================== */
 
 footer {
-    padding: 35px 20px;
+    padding: 32px 20px;
 
     background: #241913;
 
@@ -520,11 +548,11 @@ footer {
 
     font-family: Arial, sans-serif;
 
-    font-size: 13px;
+    font-size: 12px;
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 4px 0;
 }
 
 footer p:first-child {
@@ -535,7 +563,7 @@ footer p:first-child {
 
 
 /* =====================================================
-   RESPONSIVE — TABLET
+   TABLET
 ===================================================== */
 
 @media (max-width: 950px) {
@@ -562,23 +590,25 @@ footer p:first-child {
 
 
 /* =====================================================
-   RESPONSIVE — CELULAR
+   CELULAR
 ===================================================== */
 
 @media (max-width: 650px) {
+
+    /* HEADER */
 
     header {
         position: relative;
 
         flex-direction: column;
 
-        gap: 15px;
+        gap: 13px;
 
-        padding: 18px 20px;
+        padding: 17px 18px;
     }
 
     .logo {
-        font-size: 23px;
+        font-size: 22px;
     }
 
     nav {
@@ -586,112 +616,205 @@ footer p:first-child {
 
         justify-content: center;
 
-        gap: 12px 18px;
+        gap: 9px 17px;
     }
 
     nav a {
-        font-size: 13px;
+        font-size: 12px;
     }
 
 
+    /* HERO */
+
     .hero {
-        min-height: 570px;
+        min-height: 530px;
+    }
+
+    .hero-content {
+        padding: 30px 20px;
     }
 
     .hero-content h1 {
-        font-size: 55px;
+        font-size: 52px;
+
+        margin-bottom: 15px;
     }
 
     .hero-content p {
-        font-size: 21px;
+        margin-bottom: 30px;
+
+        font-size: 20px;
     }
 
     .hero-button {
         padding: 13px 25px;
+
+        font-size: 14px;
     }
 
+
+    /* DEMO */
 
     .demo-notice {
-        width: 90%;
+        width: 91%;
 
-        margin-top: 25px;
+        margin-top: 22px;
 
-        padding: 16px;
+        padding: 14px 16px;
 
-        font-size: 13px;
+        font-size: 12px;
     }
 
 
+    /* SECCIONES */
+
     .section {
-        padding: 65px 0;
+        width: 90%;
+
+        padding: 60px 0;
     }
 
     .section-title {
-        margin-bottom: 40px;
+        margin-bottom: 38px;
     }
 
     .section-title h2 {
-        font-size: 34px;
+        font-size: 33px;
     }
 
+    .section-title p {
+        font-size: 14px;
+    }
+
+
+    /* NOSOTROS */
+
+    .about-content {
+        padding: 27px 21px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+
+    /* MENÚ */
+
+    .menu-section {
+        width: 92%;
+    }
+
+    .menu-category {
+        margin-bottom: 55px;
+    }
+
+    .menu-category h3 {
+        margin-bottom: 22px;
+
+        font-size: 24px;
+    }
 
     .menu-grid {
         grid-template-columns: 1fr;
 
-        gap: 22px;
+        gap: 18px;
     }
 
-    .menu-category {
-        margin-bottom: 60px;
-    }
 
-    .menu-category h3 {
-        font-size: 25px;
-    }
+    /* PRODUCTOS */
 
+    .producto {
+        border-radius: 15px;
+    }
 
     .producto img {
-        height: 240px;
+        width: 100%;
+
+        height: 195px;
     }
 
+    .producto-info {
+        padding: 15px 18px 17px;
+    }
+
+    .producto-info h4 {
+        margin-bottom: 5px;
+
+        font-size: 19px;
+    }
+
+    .producto-info p {
+        min-height: auto;
+
+        margin-bottom: 8px;
+
+        font-size: 13px;
+    }
+
+    .producto-info span {
+        font-size: 17px;
+    }
+
+
+    /* GALERÍA */
+
+    #galeria {
+        width: 92%;
+    }
 
     .gallery-grid {
         grid-template-columns: 1fr;
+
+        gap: 14px;
     }
 
     .gallery-grid img {
-        height: 260px;
+        height: 230px;
     }
 
 
-    .about-content {
-        padding: 28px 22px;
-    }
-
+    /* CONTACTO */
 
     .contact-info {
-        padding: 30px 20px;
+        padding: 28px 18px;
+    }
+
+    .contact-info p {
+        font-size: 13px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 28px 18px;
+
+        font-size: 11px;
     }
 
 }
 
 
 /* =====================================================
-   PANTALLAS MUY PEQUEÑAS
+   CELULARES MUY PEQUEÑOS
 ===================================================== */
 
 @media (max-width: 400px) {
 
+    .hero {
+        min-height: 500px;
+    }
+
     .hero-content h1 {
-        font-size: 45px;
+        font-size: 44px;
     }
 
     .hero-content p {
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .producto img {
-        height: 220px;
+        height: 185px;
     }
 
 }

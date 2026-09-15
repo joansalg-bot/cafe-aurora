@@ -1,7 +1,6 @@
 ```css
 /* =========================================================
-   CAFÉ AURORA
-   Diseño Esencial
+   CAFÉ AURORA — DISEÑO RENOVADO
 ========================================================= */
 
 * {
@@ -15,8 +14,8 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f8f3ea;
+    font-family: "Arial", sans-serif;
+    background: #f7f1e7;
     color: #3b2920;
     line-height: 1.6;
 }
@@ -37,62 +36,68 @@ header {
 
     padding: 18px 7%;
 
-    background: #302018;
-    color: white;
+    background: rgba(47, 31, 23, 0.97);
+    color: #fff;
 
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-family: Georgia, serif;
+    font-size: 1.65rem;
     font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 nav {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    gap: 28px;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    font-size: 0.95rem;
     font-weight: 600;
-    transition: 0.3s;
+
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: #d9a85c;
+    color: #d6a45d;
 }
 
 
 /* =========================================================
-   SECCIONES GENERALES
+   GENERAL
 ========================================================= */
 
 main section {
-    padding: 80px 7%;
+    padding: 90px 7%;
 }
 
 main section > p:first-child {
-    color: #a56b32;
-    font-size: 0.85rem;
+    margin-bottom: 12px;
+
+    color: #a56b35;
+
+    font-size: 0.78rem;
     font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+
+    letter-spacing: 3px;
 }
 
 h1,
-h2 {
-    font-family: Georgia, "Times New Roman", serif;
-}
-
-h2 {
-    font-size: 2.4rem;
-    margin-bottom: 20px;
-}
-
+h2,
 h3 {
     font-family: Georgia, "Times New Roman", serif;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.15;
+    color: #4a3021;
 }
 
 
@@ -101,68 +106,81 @@ h3 {
 ========================================================= */
 
 #inicio {
-    min-height: 650px;
+    min-height: 720px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
 
-    padding: 100px 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 
-    color: white;
+    color: #fff;
 
     background:
         linear-gradient(
-            rgba(35, 22, 15, 0.62),
-            rgba(35, 22, 15, 0.62)
+            90deg,
+            rgba(35, 22, 15, 0.86),
+            rgba(35, 22, 15, 0.45),
+            rgba(35, 22, 15, 0.2)
         ),
-        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=80");
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=85");
 
     background-size: cover;
     background-position: center;
 }
 
-#inicio p {
-    max-width: 650px;
-}
-
 #inicio p:first-child {
-    color: #e7bd79;
+    color: #e3b873;
 }
 
 #inicio h1 {
-    max-width: 750px;
-    margin-bottom: 20px;
+    max-width: 850px;
 
-    font-size: clamp(2.8rem, 6vw, 5.2rem);
-    line-height: 1.05;
+    margin-bottom: 22px;
+
+    font-size: clamp(3rem, 7vw, 6rem);
+
+    line-height: 1;
+
+    color: #fff;
 }
 
 #inicio p:not(:first-child) {
-    font-size: 1.15rem;
+    max-width: 650px;
+
     margin-bottom: 30px;
+
+    color: #f2ebe3;
+
+    font-size: 1.15rem;
 }
 
 #inicio a {
     display: inline-block;
 
     margin: 5px 10px 5px 0;
-    padding: 13px 24px;
+
+    padding: 14px 27px;
 
     border-radius: 30px;
 
     background: #c28b4b;
+
     color: white;
 
     text-decoration: none;
+
     font-weight: bold;
 
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 #inicio a:hover {
-    background: #a86e31;
-    transform: translateY(-2px);
+    background: #a96f32;
+
+    transform: translateY(-3px);
 }
 
 
@@ -172,13 +190,24 @@ h3 {
 
 #nosotros {
     text-align: center;
-    max-width: 1000px;
-    margin: auto;
+
+    background: #f7f1e7;
+}
+
+#nosotros h2 {
+    max-width: 850px;
+
+    margin: 0 auto 25px;
 }
 
 #nosotros p:not(:first-child) {
-    max-width: 750px;
-    margin: 10px auto;
+    max-width: 720px;
+
+    margin: 12px auto;
+
+    color: #66554a;
+
+    font-size: 1.05rem;
 }
 
 
@@ -197,26 +226,34 @@ h3 {
 
 #menu > p {
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-#menu > h3 {
-    max-width: 1200px;
-    margin: 55px auto 25px;
+    margin: 0 auto;
 
-    padding-bottom: 10px;
-
-    font-size: 1.8rem;
-
-    color: #6b4228;
-
-    border-bottom: 2px solid #dfc39b;
+    color: #756256;
 }
 
 
 /* =========================================================
-   GRID DE PRODUCTOS
+   CATEGORÍAS
+========================================================= */
+
+#menu > h3 {
+    max-width: 1200px;
+
+    margin: 70px auto 30px;
+
+    padding-bottom: 13px;
+
+    color: #593a27;
+
+    font-size: 2rem;
+
+    border-bottom: 1px solid #dbc3a2;
+}
+
+
+/* =========================================================
+   PRODUCT GRID
 ========================================================= */
 
 .menu-grid {
@@ -227,24 +264,29 @@ h3 {
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 
-    gap: 28px;
+    gap: 30px;
 }
 
 
 /* =========================================================
-   TARJETA DE PRODUCTO
+   PRODUCT CARD
 ========================================================= */
 
 .producto {
+    min-width: 0;
+
     overflow: hidden;
 
-    background: white;
+    background: #fff;
 
-    border-radius: 18px;
+    border: 1px solid #eee3d4;
 
-    box-shadow: 0 6px 20px rgba(70, 45, 25, 0.12);
+    border-radius: 20px;
+
+    box-shadow:
+        0 7px 25px rgba(69, 44, 27, 0.10);
 
     transition:
         transform 0.3s ease,
@@ -252,44 +294,53 @@ h3 {
 }
 
 .producto:hover {
-    transform: translateY(-7px);
+    transform: translateY(-8px);
 
-    box-shadow: 0 12px 28px rgba(70, 45, 25, 0.18);
+    box-shadow:
+        0 15px 35px rgba(69, 44, 27, 0.17);
 }
 
 
 /* =========================================================
-   IMÁGENES DE PRODUCTOS
+   PRODUCT IMAGE
 ========================================================= */
 
 .producto img {
     display: block;
 
     width: 100%;
-    height: 230px;
+    height: 245px;
 
     object-fit: cover;
 
     background: #eee;
+
+    transition: transform 0.5s ease;
+}
+
+.producto:hover img {
+    transform: scale(1.04);
 }
 
 
 /* =========================================================
-   INFORMACIÓN DEL PRODUCTO
+   PRODUCT INFORMATION
 ========================================================= */
 
 .producto h3 {
-    margin: 18px 20px 8px;
-
-    font-size: 1.3rem;
+    margin: 20px 22px 8px;
 
     color: #4b3020;
+
+    font-size: 1.35rem;
 }
 
 .producto p {
-    margin: 0 20px 15px;
+    min-height: 52px;
 
-    color: #725f53;
+    margin: 0 22px 15px;
+
+    color: #746257;
 
     font-size: 0.95rem;
 }
@@ -297,11 +348,11 @@ h3 {
 .producto strong {
     display: block;
 
-    margin: 0 20px 20px;
+    margin: 0 22px 22px;
 
-    color: #a66a2c;
+    color: #a6672d;
 
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 
@@ -311,18 +362,23 @@ h3 {
 
 #galeria {
     text-align: center;
+
+    background: #f2e6d5;
 }
 
-#galeria > p {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+#galeria > p:not(:first-child) {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #6f5c4d;
 }
 
 .gallery-grid {
+    width: 100%;
     max-width: 1100px;
 
-    margin: 40px auto 0;
+    margin: 45px auto 0;
 
     display: grid;
 
@@ -332,20 +388,24 @@ h3 {
 }
 
 .gallery-grid img {
+    display: block;
+
     width: 100%;
-    height: 250px;
+    height: 270px;
 
     object-fit: cover;
 
-    border-radius: 15px;
+    border-radius: 18px;
 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    box-shadow:
+        0 7px 20px rgba(58, 39, 25, 0.15);
 
-    transition: transform 0.3s ease;
+    transition:
+        transform 0.3s ease;
 }
 
 .gallery-grid img:hover {
-    transform: scale(1.03);
+    transform: scale(1.035);
 }
 
 
@@ -356,13 +416,15 @@ h3 {
 #contacto {
     text-align: center;
 
-    background: #eadbc7;
+    background: #e8d6bf;
 }
 
-#contacto > p {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+#contacto > p:not(:first-child) {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #665245;
 }
 
 #contacto > div {
@@ -372,37 +434,47 @@ h3 {
 
     width: 250px;
 
-    margin: 25px 10px;
+    margin: 35px 15px 15px;
 }
 
 #contacto h3 {
     margin-bottom: 8px;
 
-    color: #593821;
+    color: #593a27;
+
+    font-size: 1.25rem;
 }
 
-#contacto a {
+#contacto > div p {
+    color: #6c594c;
+}
+
+#contacto > a {
     display: inline-block;
 
-    margin-top: 15px;
+    margin-top: 25px;
 
-    padding: 14px 28px;
+    padding: 15px 30px;
 
-    background: #3d6b43;
+    background: #3d6943;
+
     color: white;
 
     border-radius: 30px;
 
     text-decoration: none;
+
     font-weight: bold;
 
-    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(38, 75, 42, 0.2);
+
+    transition: 0.3s ease;
 }
 
-#contacto a:hover {
-    transform: translateY(-2px);
+#contacto > a:hover {
+    background: #2f5534;
 
-    background: #2f5735;
+    transform: translateY(-3px);
 }
 
 
@@ -411,63 +483,77 @@ h3 {
 ========================================================= */
 
 footer {
-    padding: 45px 7%;
+    padding: 50px 7%;
 
     text-align: center;
 
-    background: #302018;
-    color: #eee;
+    background: #302019;
+
+    color: #fff;
 }
 
 footer h3 {
     margin-bottom: 8px;
 
-    font-size: 1.5rem;
+    color: #fff;
+
+    font-size: 1.6rem;
 }
 
 footer p {
-    margin: 5px;
-    color: #d6cbc3;
+    margin: 6px;
+
+    color: #d8cbc0;
 }
 
 
 /* =========================================================
-   RESPONSIVE — TABLET
+   TABLET
 ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
     header {
-        padding: 15px 5%;
+        padding: 17px 5%;
     }
 
     nav {
-        gap: 15px;
+        gap: 17px;
     }
 
     .menu-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    #inicio {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
 }
 
 
 /* =========================================================
-   RESPONSIVE — CELULAR
+   CELULAR
 ========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
     header {
+        position: relative;
+
         flex-direction: column;
 
-        gap: 12px;
+        gap: 13px;
 
-        padding: 15px 4%;
+        padding: 17px 4%;
+    }
+
+    .logo {
+        font-size: 1.45rem;
     }
 
     nav {
@@ -475,47 +561,55 @@ footer p {
 
         justify-content: center;
 
-        gap: 12px;
+        gap: 12px 18px;
     }
 
     nav a {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+    }
+
+    main section {
+        padding: 65px 5%;
     }
 
     #inicio {
-        min-height: 580px;
+        min-height: 650px;
 
         padding: 80px 7%;
     }
 
     #inicio h1 {
-        font-size: 2.8rem;
+        font-size: 3.1rem;
     }
 
-    main section {
-        padding: 60px 5%;
+    #inicio p:not(:first-child) {
+        font-size: 1rem;
     }
 
-    h2 {
-        font-size: 2rem;
+    #menu > h3 {
+        margin-top: 50px;
+
+        font-size: 1.7rem;
     }
 
     .menu-grid {
         grid-template-columns: 1fr;
 
-        gap: 22px;
+        gap: 25px;
     }
 
     .producto img {
-        height: 240px;
+        height: 250px;
     }
 
     .gallery-grid {
         grid-template-columns: 1fr;
+
+        gap: 20px;
     }
 
     .gallery-grid img {
-        height: 260px;
+        height: 280px;
     }
 
     #contacto > div {
@@ -523,8 +617,29 @@ footer p {
 
         width: 100%;
 
-        margin: 25px 0;
+        margin: 30px 0;
+    }
+}
+
+
+/* =========================================================
+   TELÉFONOS PEQUEÑOS
+========================================================= */
+
+@media (max-width: 400px) {
+
+    #inicio h1 {
+        font-size: 2.6rem;
     }
 
+    #inicio a {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .producto img {
+        height: 220px;
+    }
 }
 ```

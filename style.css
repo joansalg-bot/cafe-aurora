@@ -1,1 +1,461 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4ee;
+    color: #30251f;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   BARRA DE NAVEGACIÓN
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background-color: rgba(248, 244, 238, 0.96);
+
+    border-bottom: 1px solid #e3d9ce;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+    font-weight: bold;
+
+    color: #5b3926;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a06d43;
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+#inicio {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 130px 7% 80px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(42, 29, 22, 0.78),
+            rgba(42, 29, 22, 0.78)
+        ),
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+#inicio > p:first-child {
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+#inicio h1 {
+    max-width: 750px;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(50px, 7vw, 85px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+#inicio h1::first-line {
+    color: #e6c29f;
+}
+
+#inicio > p:nth-of-type(2) {
+    max-width: 550px;
+
+    font-size: 18px;
+
+    margin-bottom: 35px;
+
+    color: #f1e8df;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+#inicio a,
+#contacto > a {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 14px 25px;
+
+    margin-right: 10px;
+
+    border-radius: 30px;
+
+    background-color: #b98250;
+
+    color: white;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+#inicio a:hover,
+#contacto > a:hover {
+    transform: translateY(-3px);
+
+    background-color: #9b683f;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+section {
+    padding: 100px 7%;
+}
+
+section > p:first-child {
+    color: #9b704c;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+section h2 {
+    max-width: 650px;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   NOSOTROS
+========================= */
+
+#nosotros {
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #f8f4ee;
+}
+
+#nosotros > p:not(:first-child) {
+    max-width: 700px;
+
+    color: #6d5d52;
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+#menu {
+    background-color: #eee4d6;
+}
+
+#menu > p:nth-of-type(2) {
+    color: #6d5d52;
+
+    margin-bottom: 45px;
+}
+
+#menu article {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: calc(33.333% - 20px);
+
+    min-height: 210px;
+
+    margin: 10px;
+
+    padding: 28px;
+
+    background-color: #fffaf4;
+
+    border-radius: 18px;
+
+    border: 1px solid #e4d8ca;
+
+    transition: 0.3s;
+}
+
+#menu article:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 30px rgba(48, 37, 31, 0.08);
+}
+
+#menu article h3 {
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+}
+
+#menu article p {
+    color: #75665d;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+#menu article strong {
+    color: #9b704c;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+#galeria {
+    background-color: #f8f4ee;
+
+    text-align: center;
+}
+
+#galeria h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#galeria > p:nth-of-type(2) {
+    color: #6d5d52;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+#contacto {
+    background-color: #30251f;
+
+    color: white;
+
+    text-align: center;
+}
+
+#contacto h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contacto > p:nth-of-type(2) {
+    max-width: 600px;
+
+    margin: 0 auto 40px;
+
+    color: #d8cec5;
+}
+
+#contacto div {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 28%;
+
+    margin: 15px;
+
+    padding: 20px;
+}
+
+#contacto div h3 {
+    margin-bottom: 8px;
+}
+
+#contacto div p {
+    color: #cfc3ba;
+
+    font-size: 14px;
+}
+
+#contacto > a {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 40px 7%;
+
+    background-color: #241b17;
+
+    color: white;
+
+    text-align: center;
+}
+
+footer h3 {
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #a99d94;
+
+    font-size: 14px;
+
+    margin-top: 8px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    nav {
+        display: none;
+    }
+
+    #menu article {
+        width: calc(50% - 20px);
+    }
+
+    #contacto div {
+        width: 40%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    #inicio {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    #inicio h1 {
+        font-size: 48px;
+    }
+
+    section {
+        padding: 80px 6%;
+    }
+
+    #menu article {
+        display: block;
+
+        width: 100%;
+
+        margin: 15px 0;
+    }
+
+    #contacto div {
+        display: block;
+
+        width: 100%;
+
+        margin: 10px 0;
+    }
+
+}
